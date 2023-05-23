@@ -1,0 +1,29 @@
+<%- include('templates/header') %>
+    <div class="container mt-5">
+        <form id="form_user" action="/" method="POST" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="username" required>
+                <div class="username-msg invalid-feedback">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="email" required>
+                <div class="email-msg invalid-feedback">
+                </div>
+            </div>            
+            <div class="col-md-4">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="password" required>
+                <div class="password-msg invalid-feedback">
+                </div>
+            </div>            
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+    </div>
+    <script defer src="/joi-client.js"></script>
+
+<%- include('templates/footer') %>
